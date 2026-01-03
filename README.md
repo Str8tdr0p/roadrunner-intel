@@ -1,4 +1,4 @@
-# Operation RoadRunner — drop note
+# Operation RoadRunner 
 
 I found a stego payload in IMG_1118.png. I extracted artifacts and decoded multiple layers. This repo is the raw drop: hashes, rules, IOCs, and concise notes for defenders. No binaries.
 
