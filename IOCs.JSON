@@ -1,0 +1,67 @@
+{
+  "report_date": "2026-01-02",
+  "tlp": "AMBER",
+  "source": "single-operator",
+  "note": "Hashes are from extracted artifacts of a stego payload; they identify exact byte sequences and may not be present elsewhere. Artifact metadata retained offline; sample sharing by PGP only.",
+  "iocs": [
+    {
+      "type": "file",
+      "subtype": "sha256",
+      "value": "5e8987a1d1fbfcecce443fcbdf133af5aa14dd4217ed6ed501c7282e4ebe834c",
+      "first_seen": "2026-01-02",
+      "confidence": "High",
+      "action": "block/hunt",
+      "notes": "final extracted payload hash (public)"
+    },
+    {
+      "type": "file",
+      "subtype": "md5",
+      "value": "28a9a1f512da3e7bd4d67cf64e7b4e99",
+      "first_seen": "2026-01-02",
+      "confidence": "High",
+      "action": "block/hunt",
+      "notes": "final extracted payload hash (public)"
+    },
+    {
+      "type": "string",
+      "subtype": "guid",
+      "value": "46d25f419b884be338",
+      "first_seen": "2026-01-02",
+      "confidence": "High",
+      "action": "hunt",
+      "notes": "victim tracking GUID (hex)"
+    },
+    {
+      "type": "asn",
+      "value": "AS20115",
+      "first_seen": "2026-01-02",
+      "confidence": "High",
+      "action": "investigate",
+      "notes": "Charter Communications (primary C2 ASN)"
+    },
+    {
+      "type": "ipv4",
+      "value": "76.250.68.175",
+      "first_seen": "2026-01-02",
+      "confidence": "High",
+      "action": "block/hunt",
+      "notes": "primary C2 (AS20115)"
+    },
+    {
+      "type": "port",
+      "value": "39586/tcp",
+      "first_seen": "2026-01-02",
+      "confidence": "High",
+      "action": "block/hunt",
+      "notes": "primary C2 port"
+    },
+    {
+      "type": "port",
+      "value": "47862/tcp",
+      "first_seen": "2026-01-02",
+      "confidence": "High",
+      "action": "block/hunt",
+      "notes": "secondary C2 port"
+    }
+  ]
+}
