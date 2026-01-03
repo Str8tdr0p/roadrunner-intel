@@ -7,16 +7,12 @@ TLP: AMBER — share with defenders. Samples remain offline and are provided onl
 Contents
 - OPERATION_ROADRUNNER_SOC_REPORT.md — short, actionable SOC playbook
 - EXECUTIVE_SUMMARY.md — quick facts
-- IOCs.csv / IOCs.json — machine-readable indicators (hashes, C2 IPs, ports, GUID)
-- roadrunner_yara.yar — YARA (file & memory)
-- operation_roadrunner_sigma.yml — Sigma for SIEM hunts
-- roadrunner_suricata.rules — IDS rules
+- IOCs.json — machine-readable indicators (hashes, C2 IPs, ports, GUID)
 - steganography_analysis.md — extraction notes, offsets, keys
 - c2_infrastructure_report.md — extracted IP candidates (public + private contexts)
 - COMMUNITY_POST.md — coordination thread text
 - SECURITY.md — sample request / handling
-- CONTRIBUTING.md, ISSUE_TEMPLATE.md, CONTRIBUTORS.md — minimal collaboration templates
-- .gitignore — blocks accidental uploads
+
 
 What I did
 - Confirmed LSB stego → XOR → deflate chain
@@ -31,6 +27,6 @@ If you want the sample
 - Post a request in Discussions with your PGP fingerprint and short justification (role / org / pseudonym). I vet, then send encrypted.
 
 If you will hunt
-- Use the provided YARA/Sigma/Suricata and IOCs.csv. Run them, report sightings in Issues. Keep outputs high-level (counts, timestamps, source IPs). Do not publish raw PCAPs or sample binaries.
+Use the provided YARA/Sigma/Suricata and IOCs.csv. Run them, report sightings in Issues. Keep outputs high-level (counts, timestamps, source IPs). Do not publish raw PCAPs or sample binaries.
 
 — single-operator drop
